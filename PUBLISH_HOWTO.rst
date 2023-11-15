@@ -5,9 +5,8 @@ C.f. https://packaging.python.org/en/latest/tutorials/packaging-projects/
  
 1. Install / update pip, build and twine::
 
-    python3 -m pip install --upgrade pip
-    python3 -m pip install --upgrade build
-    python3 -m pip install --upgrade twine
+    pip install --upgrade pip
+    pip install -r requirements-build.txt
 
 2. Build the source distribution::
 

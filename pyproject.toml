@@ -1,13 +1,25 @@
+[project]
+authors = [
+    {name = "Jérémie DECOCK", email = "jd.jdhp@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+description = "INF639"
+dynamic = ["dependencies"]
+name = "inf639"
+requires-python = ">=3.8"
+version = "0.1.dev0"
+
 [build-system]
 requires = [
-    'gymnasium',
-    'imageio',
-    'ipywidgets',
-    'matplotlib',
-    'numpy',
-    'pandas',
-    'pygame',
-    'seaborn',
-    'torch',
-    'tqdm',
+    'setuptools',
 ]
+
+[tool.setuptools]
+packages = ["inf639"]
+
+# Use requirements.txt to setup dependencies (c.f. https://stackoverflow.com/a/73600610)
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
