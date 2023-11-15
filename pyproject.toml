@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    'gymnasium',
+    'imageio',
+    'ipywidgets',
+    'matplotlib',
+    'numpy',
+    'pandas',
+    'pygame',
+    'seaborn',
+    'torch',
+    'tqdm',
+]
